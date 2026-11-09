@@ -306,7 +306,12 @@ Vì sao:
 
 ## 9. Hạn chế và hướng tiếp theo
 
--
+- Chưa có phỏng vấn và chưa bấm giờ; baseline 60–120 phút/bài là ước lượng của hai thành viên trong nhóm, nên mọi kết luận về impact còn là giả thuyết.
+- Số 1–2 giờ/bài của Đạt gộp đọc và trích xuất, chưa tách bước quyết định.
+- Đạt chưa điền Top 3, Problem Card và câu hỏi phản biện; các candidate #10–12 được chọn tạm từ bảng Scan.
+- Cột "câu hỏi phản biện" mới lấy từ báo cáo cá nhân, chưa có tên người hỏi thật.
+- Thông tin về công cụ ở mục 3.3 lấy từ hướng dẫn bên thứ ba, nhóm chưa tự thử; điểm số ở mục 2.4 và các ngưỡng ở mục 8 là đề xuất cần cả nhóm xác nhận.
+- Hướng tiếp theo: thực hiện 4 việc ở mục 8.2 (Not Yet); nếu S1 đứng vững, thử mở rộng sang S3 (tổng hợp ôn thi) vì cùng cluster A.
 
 ## 10. Tài liệu tham khảo
 
