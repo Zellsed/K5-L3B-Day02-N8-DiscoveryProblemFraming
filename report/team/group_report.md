@@ -153,6 +153,7 @@ Tổng hợp:
 
 ---
 
+
 ## 4. Quy trình trước/sau (CP5)
 
 ### 4.1. Quy trình hiện tại
@@ -160,53 +161,79 @@ Tổng hợp:
 Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
 
 ```text
-
+[1. Tìm và tải các bài báo liên quan đến đề tài]
+                         |
+                         v
+[2. Đọc từng bài để xác định mức độ liên quan]
+                  <-- BOTTLENECK
+                         |
+                         v
+[3. Ghi phương pháp, kết quả chính và nguồn]
+                         |
+                         v
+[4. Đánh giá và chọn các bài cần đọc kỹ]
+                         |
+                         v
+[5. Đọc sâu, đối chiếu và viết Literature Review]
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
-| ---: | ----- | ----- | ------ | -------------------- | ------- |
-|    1 |       |       |        |                      |         |
-|    2 |       |       |        |                      |         |
-|    3 |       |       |        |                      |         |
-|    4 |       |       |        |                      |         |
-|    5 |       |       |        |                      |         |
+|---:|---|---|---|---|---|
+| 1 | Sinh viên/nghiên cứu sinh | Chủ đề, từ khóa nghiên cứu | Khoảng 30 bài báo/PDF | Chưa đo | Bài báo thường dài 10–30 trang |
+| 2 | Sinh viên/nghiên cứu sinh | Nội dung từng PDF | Nhận định sơ bộ về mức độ liên quan | 60–120 phút/bài (ước lượng) | **Bottleneck chính** |
+| 3 | Sinh viên/nghiên cứu sinh | Phương pháp, kết quả và nội dung bài báo | Ghi chú và nguồn trích dẫn | Chưa tách thời gian | Nguy cơ bỏ sót hoặc ghi sai thông tin |
+| 4 | Sinh viên/nghiên cứu sinh | Ghi chú, mục tiêu nghiên cứu | Danh sách bài cần đọc kỹ | Chưa đo riêng | Đánh giá và lựa chọn thủ công |
+| 5 | Sinh viên/nghiên cứu sinh | Các bài được chọn | Phân tích, đối chiếu và Literature Review | Ngoài phạm vi baseline | Tiếp tục thực hiện sau sàng lọc |
 
-**Bottleneck chính:**
+**Bottleneck chính:** Người nghiên cứu mất khoảng 60–120 phút cho mỗi bài để xác định mức độ liên quan và quyết định có đọc kỹ hay không; đây là ước tính từ trải nghiệm cá nhân, cần bấm giờ để kiểm chứng. Thời gian này chưa bao gồm đọc chuyên sâu, đối chiếu giữa nhiều bài và viết tổng quan.
 
 ### 4.2. Quy trình tương lai
 
 Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
 
 ```text
-
+report/assets/cp5-workflow-future.png
 ```
+
+- **Rule:** Kiểm tra tính hợp lệ, quyền truy cập và khả năng trích xuất của PDF; lưu metadata, trang và vị trí đoạn nguồn. Không tự suy diễn nội dung tài liệu.
+- **RAG:** Truy xuất các đoạn liên quan đến mục tiêu nghiên cứu, cung cấp bằng chứng để AI tóm tắt và đánh giá.
+- **AI/LLM:** Trích xuất phương pháp, dữ liệu, kết quả, đóng góp chính; tóm tắt nội dung và đánh giá mức độ liên quan với đề tài. Kết quả được phân thành ba mức: **Cao** (ưu tiên đọc sâu), **Trung bình** (tham khảo khi có thời gian), **Thấp** (loại khỏi danh sách ưu tiên nhưng vẫn lưu trữ).
+- **Con người:** Xác định mục tiêu nghiên cứu, lựa chọn bài cần đọc sâu, kiểm chứng kết quả và chịu trách nhiệm về các nhận định sử dụng trong Literature Review.
+- **Boundary:** AI không được tạo dữ kiện, kết quả hoặc trích dẫn không tồn tại trong nguồn; không được trình bày suy luận như kết quả đã được chứng minh; không truy cập tài liệu ngoài phạm vi được phép; không tự xóa vĩnh viễn bài báo hoặc kết luận research gap thay người nghiên cứu. Các nhận định quan trọng phải truy ngược được về tài liệu gốc để bảo đảm liêm chính học thuật.
+- **Phương án quay về:** Khi PDF không xử lý được, nội dung thiếu căn cứ hoặc không thể phân loại đáng tin cậy, hệ thống đánh dấu **Chưa phân loại**, giữ nguyên tài liệu và chuyển cho người dùng xem xét thủ công. Không tự gán mức liên quan thấp cho các trường hợp lỗi.
 
 ### 4.3. Before / after
 
-| Chỉ số               | Trước | Sau (kỳ vọng) | Ghi chú |
-| -------------------- | ----: | ------------: | ------- |
-| Số bước              |       |               |         |
-| Tổng thời gian       |       |               |         |
-| Số bước thủ công     |       |               |         |
-| Bottleneck chính     |       |               |         |
-| Rủi ro mới phát sinh |       |               |         |
+| Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
+|---|---:|---:|---|
+| Số bước | 5 | 6 | Tính 6 giai đoạn chính đến khi người dùng hoàn thành lựa chọn bài đọc sâu; không tính từng nhánh phân loại |
+| Tổng thời gian | 60–120 phút/bài | Dưới 30 phút/bài | Chỉ tính sàng lọc và tạo bản trích xuất sơ bộ; baseline chưa đo thực tế |
+| Số bước thủ công | 4 | 2 | Trong giai đoạn sàng lọc: cung cấp tài liệu và lựa chọn bài ưu tiên; đọc sâu là công việc tiếp theo |
+| Bottleneck chính | Đọc nhiều trang để xác định mức độ liên quan | Kiểm tra các tài liệu không phân loại được và các bằng chứng quan trọng | AI/RAG đảm nhiệm phần lớn công việc sàng lọc ban đầu |
+| Rủi ro mới phát sinh | Không áp dụng AI; có nguy cơ bỏ sót và ghi sai nguồn khi đọc thủ công | AI đánh giá sai mức độ liên quan, trích xuất sai hoặc dẫn nguồn không hỗ trợ nhận định | Cần kiểm chứng Grounding, Correctness và Relevance trước khi sử dụng |
 
 ---
 
 ## 5. Problem Statement v0 (CP5)
 
-| Trường                                                                     | Nội dung |
-| -------------------------------------------------------------------------- | -------- |
-| **Actor**                                                                  |          |
-| **Quy trình**                                                              |          |
-| **Bottleneck**                                                             |          |
-| **Impact**                                                                 |          |
-| **Success Metric** (baseline → target, cách đo)                            |          |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) |          |
+| Trường | Nội dung |
+|---|---|
+| **Actor** | Sinh viên, nghiên cứu sinh và người thực hiện Literature Review. |
+| **Quy trình** | Tìm và tải tài liệu → đọc để xác định mức độ liên quan → trích xuất phương pháp, kết quả và nguồn → lựa chọn bài đọc kỹ → đối chiếu và viết tổng quan. Quy trình đề xuất sử dụng RAG + AI để hỗ trợ sàng lọc, tóm tắt, dẫn nguồn và phân loại mức độ liên quan trước khi người dùng đọc sâu. |
+| **Bottleneck** | Người nghiên cứu mất khoảng 60–120 phút/bài để xác định mức độ liên quan và quyết định có đọc kỹ hay không. Đây là ước tính cá nhân, chưa được bấm giờ và chưa bao gồm quá trình đọc sâu hoặc viết Literature Review. |
+| **Impact** | Với khoảng 30 bài, thời gian sàng lọc ước tính có thể lên tới 30–60 giờ, làm giảm thời gian dành cho nghiên cứu chuyên sâu. Việc đọc và ghi chú thủ công còn có nguy cơ bỏ sót bài quan trọng, trích xuất sai thông tin hoặc dẫn nguồn không chính xác. |
+| **Success Metric** (baseline → target, cách đo) | **Screening Time:** 60–120 phút/bài (ước lượng) → dưới 30 phút/bài, đo từ lúc bắt đầu sàng lọc đến khi có bản trích xuất và phân loại sơ bộ. **Grounding Correctness:** mục tiêu ≥95% nhận định được dẫn chứng gốc hỗ trợ đúng. **Extraction Correctness:** mục tiêu ≥90% thông tin phương pháp, dữ liệu và kết quả được trích xuất chính xác. **Relevance Classification Accuracy:** mục tiêu ≥90% so với nhãn đánh giá thủ công. **High-Relevance Recall:** mục tiêu ≥95%, hạn chế bỏ sót bài thực sự có mức liên quan cao. **Ranking Quality:** NDCG@5 ≥0,8 để đánh giá thứ tự ưu tiên. Thử sơ bộ trên 5 bài và mở rộng tập có nhãn để đánh giá các metric phân loại/xếp hạng; toàn bộ ngưỡng là mục tiêu đề xuất, chưa phải kết quả đo. |
+| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | Hệ thống phải bảo đảm liêm chính học thuật: không bịa nội dung, kết quả, nguồn trích dẫn hoặc tự kết luận research gap. Mỗi nhận định quan trọng cần có bằng chứng truy xuất được từ PDF gốc. AI chỉ sàng lọc và đề xuất thứ tự ưu tiên; bài mức thấp chỉ bị loại khỏi danh sách ưu tiên, không bị xóa. Con người kiểm chứng các thông tin sử dụng trong nghiên cứu, quyết định đọc sâu và chịu trách nhiệm về kết luận cuối cùng. Tài liệu lỗi hoặc không đủ căn cứ được chuyển sang trạng thái Chưa phân loại để kiểm tra thủ công. |
 
 Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
 
-- ***
+- **Đồng ý:** Tóm tắt đúng chưa đồng nghĩa với đánh giá đúng mức độ liên quan. Cần đo Relevance Classification Accuracy, High-Relevance Recall và NDCG@5, đặc biệt tránh xếp nhầm bài quan trọng vào nhóm thấp.
+- **Đồng ý:** Có dẫn chứng không đồng nghĩa với dẫn chứng hỗ trợ đúng nhận định. Vì yêu cầu liêm chính học thuật cao, cần đánh giá Grounding và Extraction Correctness riêng biệt.
+- **Đồng ý:** Baseline 60–120 phút/bài mới là ước lượng. Cần bấm giờ thực tế và so sánh với cách đọc có cấu trúc không dùng AI.
+- **Đồng ý:** Các trường hợp PDF lỗi hoặc không đủ bằng chứng không được mặc định là bài ít liên quan; cần giữ trạng thái Chưa phân loại để người dùng xử lý.
+
+---
+
 
 ## 6. Mức can thiệp AI (CP6)
 
