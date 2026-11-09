@@ -32,7 +32,7 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 | CP5 — Problem Statement v0                 | Trần Trọng Đạt      | Cả nhóm      | Problem Statement v0                           |
 | CP6 — Mức can thiệp + Problem Statement v1 | Khương Hoàng Nguyên | Cả nhóm      | Ma trận, AI Canvas, eval, Problem Statement v1 |
 | CP6 — Quyết định                           | Khương Hoàng Nguyên | Cả nhóm      | 4 rủi ro + Go/Not Yet/No-Go                    |
-| Tổng kết — Hạn chế, hướng tiếp theo, nguồn | Khương Hoàng Nguyên | Cả nhóm      | Mục 9 và tài liệu tham khảo mục 10             |
+| Tổng kết — Hạn chế, hướng tiếp theo, nguồn | Khương Hoàng Nguyên + Quách Ngọc Huy | Cả nhóm      | Mục 9 và tài liệu tham khảo mục 10             |
 
 Các checkpoint cá nhân (CP0, CP1, CP2, CP7) mỗi người tự làm trong báo cáo cá nhân `report/individual/MSSV_HoTen.md`.
 
