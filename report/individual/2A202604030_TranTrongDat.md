@@ -52,7 +52,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | Success metric | Baseline: cần đo thời gian lập một bảng laytime. Target đề xuất: giảm 30% thời gian; điều kiện chất lượng: kết quả khớp bảng được người phụ trách xác nhận. Cách đo: so sánh các hồ sơ có kiểm chứng |
 | Phương án không dùng AI | Chuẩn hóa biểu mẫu SOF; nhân viên nhập mốc thời gian vào Excel/laytime calculator; áp dụng quy tắc cố định và kiểm tra thủ công |
 | Giả thuyết về AI | OCR đọc scan/ghi tay; RAG tìm điều khoản trong các hợp đồng mà người dùng được phép truy cập; AI gợi ý phân loại sự kiện. Bộ tính theo quy tắc thực hiện phép tính, con người duyệt trường hợp tranh chấp |
-| Cảm nhận nhanh | Workflow + Rule + AI hỗ trợ, chưa cần Agent tự quyết định |
+| Cảm nhận nhanh | AI (RAG + LLM) + Rule + Workflow. |
 
 ```text
 HIỆN TẠI — thời gian cần đo thực tế
@@ -74,7 +74,7 @@ HIỆN TẠI — thời gian cần đo thực tế
 | Success metric | Baseline: cần đo thời gian kiểm tra/báo cáo và tỷ lệ cảnh báo đúng. Target đề xuất: giảm 30% thời gian mà không tăng cảnh báo sai đáng kể. Cách đo: so sánh trên báo cáo lịch sử được xác minh |
 | Phương án không dùng AI | Form chuẩn, kiểm tra giá trị hợp lệ, dashboard và cảnh báo theo ngưỡng cố định |
 | Giả thuyết về AI | Phát hiện bất thường trên dữ liệu vận hành kết hợp lịch sử, tốc độ, thời tiết và trạng thái tàu; nhân viên xác minh trước khi kết luận |
-| Cảm nhận nhanh | Rule + Workflow; bổ sung ML nếu quy tắc chưa đủ |
+| Cảm nhận nhanh | Rule + Workflow + ML|
 
 ```text
 HIỆN TẠI — báo cáo định kỳ hằng ngày, phút xử lý cần đo
@@ -96,7 +96,7 @@ HIỆN TẠI — báo cáo định kỳ hằng ngày, phút xử lý cần đo
 | Success metric | Baseline: 60–120 phút để đọc/phân tích một bài (ước tính). Target đề xuất: dưới 30 phút cho bản trích xuất sơ bộ/bài; chất lượng: trích dẫn phải truy ngược được tài liệu và vị trí gốc. Cách đo: thử trên 5 bài rồi đối chiếu thủ công |
 | Phương án không dùng AI | Bảng literature matrix cố định; đọc abstract → methodology → result → conclusion, gắn ghi chú/trích dẫn bằng Zotero |
 | Giả thuyết về AI | RAG truy xuất đoạn liên quan từ bộ PDF được phép sử dụng, tóm tắt phương pháp/kết quả và dẫn chứng theo trang; người nghiên cứu tự đánh giá research gap, không coi câu trả lời AI là kết luận đã xác minh |
-| Cảm nhận nhanh | Workflow + RAG; chưa cần Agent |
+| Cảm nhận nhanh | Workflow + RAG |
 
 ```text
 HIỆN TẠI — khoảng 60–120'/bài đọc (ước tính)
