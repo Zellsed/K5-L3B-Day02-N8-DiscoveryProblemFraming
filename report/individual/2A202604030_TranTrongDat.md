@@ -35,9 +35,9 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 |---:|---|---|---|
-| 1 | Đọc báo cáo xếp/dỡ và hợp đồng để tính laytime, DEM/DES (#2) | Phải tổng hợp nhiều chứng từ và điều khoản; sai lệch có thể ảnh hưởng trực tiếp đến chi phí | Thời gian thực tế, dữ liệu hợp đồng và mức độ phức tạp của trường hợp ngoại lệ |
-| 2 | Theo dõi bất thường trong Noon Report (#1) | Lặp lại hằng ngày; dữ liệu vận hành có thể kiểm tra, so sánh | Tần suất lỗi, dữ liệu lịch sử và cách phân biệt bất thường với thay đổi điều kiện biển |
-| 3 | RAG đọc và đối chiếu báo cáo nghiên cứu (#3) | Cần đọc nhiều tài liệu, truy xuất bằng chứng, tổng hợp kết quả cho literature review | Chất lượng PDF, độ chính xác trích dẫn và khả năng phát hiện research gap thực sự |
+| 1 | Đọc báo cáo xếp/dỡ và hợp đồng để tính laytime, DEM/DES (#2) | Phải tổng hợp nhiều chứng từ và điều khoản; sai lệch có thể ảnh hưởng trực tiếp đến chi phí | Thời gian thực tế, dữ liệu hợp đồng và mức độ phức tạp của trường hợp ngoại lệ? |
+| 2 | Chuẩn hóa format và giọng văn báo cáo nhóm (#5) | Các thành viên viết khác định dạng, bố cục và giọng văn; theo trải nghiệm mất khoảng 60 phút để sửa báo cáo 40 trang | Làm thế nào để AI chuẩn hóa báo cáo mà không làm thay đổi ý nghĩa hoặc mất thông tin quan trọng? |
+| 3 | RAG đọc và đối chiếu báo cáo nghiên cứu (#3) | Cần đọc nhiều tài liệu, truy xuất bằng chứng, tổng hợp kết quả cho literature review | Chất lượng PDF, độ chính xác trích dẫn và khả năng phát hiện research gap thực sự? |
 
 ### Problem Card #1 — Đọc báo cáo xếp/dỡ để tính laytime và DEM/DES
 
@@ -65,22 +65,22 @@ HIỆN TẠI — thời gian cần đo thực tế
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi tàu gửi Noon Report, tôi muốn kiểm tra nhiên liệu, vị trí, vận tốc và tiến độ để phát hiện sai lệch và cập nhật ETA |
-| Actor | Nhân viên khai thác, chủ tàu, thuyền trưởng, máy trưởng |
-| Thời điểm / bối cảnh | Trong hành trình, khi tiếp nhận báo cáo định kỳ hằng ngày |
-| Quy trình hiện tại | 1. Tàu gửi báo cáo · 2. Nhân viên ghi nhận thông số · 3. So với báo cáo trước/kế hoạch · 4. Xác minh sai lệch · 5. Cập nhật theo dõi và ETA |
-| Bottleneck | Bước 3–4, đối chiếu nhiều thông số và xác minh biến động: chưa đo được phút/báo cáo |
-| Impact | Tốn thao tác lặp lại; có thể chậm phát hiện lỗi dữ liệu, biến động nhiên liệu hoặc thay đổi ETA |
-| Success metric | Baseline: cần đo thời gian kiểm tra/báo cáo và tỷ lệ cảnh báo đúng. Target đề xuất: giảm 30% thời gian mà không tăng cảnh báo sai đáng kể. Cách đo: so sánh trên báo cáo lịch sử được xác minh |
-| Phương án không dùng AI | Form chuẩn, kiểm tra giá trị hợp lệ, dashboard và cảnh báo theo ngưỡng cố định |
-| Giả thuyết về AI | Phát hiện bất thường trên dữ liệu vận hành kết hợp lịch sử, tốc độ, thời tiết và trạng thái tàu; nhân viên xác minh trước khi kết luận |
-| Cảm nhận nhanh | Rule + Workflow + ML|
+| Job Story | Khi tổng hợp báo cáo từ nhiều thành viên, tôi muốn thống nhất format, bố cục và giọng văn để không phải sửa lại toàn bộ bài |
+| Actor | Sinh viên làm việc nhóm, trưởng nhóm, người tổng hợp báo cáo |
+| Thời điểm / bối cảnh | Khi ghép các phần do thành viên viết thành báo cáo chung trước khi nộp |
+| Quy trình hiện tại | 1. Nhận bài từ các thành viên · 2. Ghép nội dung · 3. Kiểm tra format và giọng văn · 4. Sửa các phần chưa thống nhất · 5. Rà soát và nộp báo cáo |
+| Bottleneck | Bước 3–4, rà soát và chỉnh sửa format, giọng văn: theo trải nghiệm cá nhân, khoảng 60 phút cho báo cáo 40 trang |
+| Impact | Tốn thời gian tổng hợp, dễ bỏ sót lỗi định dạng hoặc làm sai lệch ý của thành viên khi chỉnh sửa |
+| Success metric | Baseline: khoảng 60 phút/báo cáo 40 trang (trải nghiệm cá nhân). Target đề xuất: dưới 30 phút; chất lượng: giữ nguyên ý và thông tin của bản gốc. Cách đo: bấm giờ và đối chiếu trước/sau |
+| Phương án không dùng AI | Thống nhất template, style và quy tắc trình bày từ đầu; dùng chức năng Styles trong Word hoặc công cụ định dạng tự động |
+| Giả thuyết về AI | AI hỗ trợ chuẩn hóa giọng văn, tiêu đề và cách trình bày từ các phần báo cáo khác nhau; người tổng hợp đối chiếu với bản gốc để tránh thay đổi ý hoặc mất thông tin |
+| Cảm nhận nhanh | Workflow + AI hỗ trợ chỉnh sửa |
 
 ```text
-HIỆN TẠI — báo cáo định kỳ hằng ngày, phút xử lý cần đo
+HIỆN TẠI — khoảng 60'/báo cáo 40 trang (trải nghiệm cá nhân)
 
-[1 Nhận Noon Report] → [2 Nhập thông số] → [3 Đối chiếu] ← BOTTLENECK
-→ [4 Xác minh sai lệch] → [5 Cập nhật ETA]
+[1 Nhận bài] → [2 Ghép nội dung] → [3 Kiểm tra format/giọng văn] ← BOTTLENECK
+→ [4 Chỉnh sửa thống nhất] ← BOTTLENECK → [5 Rà soát và nộp]
 ```
 
 ### Problem Card #3 — RAG đọc và tổng hợp báo cáo nghiên cứu
@@ -117,7 +117,7 @@ Card #1 — Đọc báo cáo xếp/dỡ để tính laytime và DEM/DES.
 |---|---|---|---|
 | #1 | RAG trích được điều khoản không đồng nghĩa diễn giải đúng trách nhiệm và phép tính DEM/DES | Đồng ý | Tách bước trích xuất, tra điều khoản, bộ tính theo quy tắc và duyệt của nhân viên |
 | #1 | Chứng từ/hợp đồng của các bên có quyền truy cập khác nhau; RAG có thể làm lộ dữ liệu | Đồng ý | Bổ sung kiểm soát quyền trước retrieval, phân quyền theo tổ chức/chuyến tàu/tài liệu |
-| #2 | Nhiên liệu tăng không hẳn là lỗi; còn phụ thuộc thời tiết và trạng thái vận hành | Đồng ý | Cảnh báo để xác minh thay vì tự kết luận sai lệch |
+| #2 | AI chuẩn hóa giọng văn và định dạng có thể làm sai ý hoặc bỏ sót thông tin gốc | Đồng ý | Yêu cầu đối chiếu với bản gốc và chỉ chấp nhận chỉnh sửa sau khi người tổng hợp kiểm tra |
 | #3 | RAG có thể bỏ sót hoặc trích dẫn sai bài báo | Đồng ý | Bắt buộc dẫn nguồn gốc, kiểm tra độ chính xác trước khi đưa vào literature review |
 | #3 | Đọc theo cấu trúc và bảng tổng quan có thể đã tiết kiệm thời gian mà không cần AI | Đồng ý một phần | Giữ phương án không AI làm baseline để kiểm chứng giá trị RAG |
 
