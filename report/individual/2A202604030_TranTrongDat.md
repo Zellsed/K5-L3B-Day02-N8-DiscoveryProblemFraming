@@ -28,7 +28,6 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 **Nếu có dùng AI để gợi ý thêm:** ý nào AI gợi ý mà bạn giữ lại, ý nào bỏ và vì sao.
 
 - AI gợi ý thêm các vấn đề sinh viên thường gặp ở mục #6–#8 (quản lý deadline, theo dõi tiến độ bài nhóm, lọc thông báo). Giữ lại vì dễ quan sát và xác minh, nhưng chưa coi là bằng chứng nếu chưa khảo sát thực tế.
-- Giữ lại việc phân biệt OCR/RAG với công cụ tính laytime theo quy tắc; giữ kiểm tra phân quyền truy xuất tài liệu. Không giữ giả định rằng AI có thể tự kết luận trách nhiệm pháp lý hoặc tự tính DEM/DES mà không cần kiểm tra.
 
 ---
 
