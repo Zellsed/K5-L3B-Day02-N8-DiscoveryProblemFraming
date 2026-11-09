@@ -61,7 +61,7 @@ HIỆN TẠI — thời gian cần đo thực tế
 → [4 Phân loại thời gian] ← BOTTLENECK → [5 Tính DEM/DES và kiểm tra]
 ```
 
-### Problem Card #2 — Theo dõi và kiểm tra Noon Report
+### Problem Card #2 — Chuẩn hóa định dạng và giọng văn báo cáo nhóm
 
 | Trường | Nội dung |
 |---|---|
