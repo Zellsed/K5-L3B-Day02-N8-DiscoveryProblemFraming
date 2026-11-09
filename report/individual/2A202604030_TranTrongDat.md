@@ -131,8 +131,8 @@ Card #1 — Đọc báo cáo xếp/dỡ để tính laytime và DEM/DES.
 | Gom cluster / cây OST | | |
 | Chọn candidate problem | | |
 | Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
+| Quy trình nhóm | Xây dựng quy trình trước/sau (CP5). | Xác định bottleneck và vị trí AI can thiệp. |
+| Problem Statement | Xây dựng Problem Statement v0. | Làm rõ vấn đề, metric và boundary. |
 | Mức can thiệp AI | | |
 | Quyết định | | |
 
@@ -142,11 +142,11 @@ Card #1 — Đọc báo cáo xếp/dỡ để tính laytime và DEM/DES.
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
+| CP1 Scan | Diễn đạt lại vấn đề, gợi ý thêm 3 ý. | Chuẩn hóa Job Story. | Thiếu bằng chứng thực tế. | Giữ các ý phù hợp, cần kiểm chứng. |
+| CP2 Problem Card | Hỗ trợ viết và phản biện 3 card. | Làm rõ bottleneck và metric. | Một số nhận định chưa kiểm chứng. | Điều chỉnh theo trải nghiệm cá nhân. |
 | CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
+| CP5 Quy trình | Rà soát quy trình trước/sau. | Xác định vai trò AI và con người. | Có thể tự động hóa quá mức. | Giữ bước kiểm tra thủ công. |
+| CP5–6 Problem Statement | Rà soát Problem Statement v0. | Làm rõ actor, metric và boundary. | Baseline chưa được xác minh. | Ghi rõ số liệu ước lượng. |
 | CP6 Mức can thiệp / quyết định | | | | |
 
 ---
