@@ -139,9 +139,11 @@ Kiểm tra task → Nhận cập nhật chung chung → Phát hiện blocker mu�
 | Chọn candidate problem | | |
 | Kiểm chứng / research | | |
 | Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Problem Statement | Viết Problem Statement v1 với actor, quy trình sàng lọc, baseline ước tính, mục tiêu, boundary và tiêu chí đánh giá. | Mục 7 báo cáo nhóm; tách rõ thời gian đến quyết định sàng lọc đã kiểm tra nguồn khỏi thời gian tạo bản trích xuất. |
+| Mức can thiệp AI | So sánh No AI, Rule, Workflow, Agent; xác định Workflow là mức đề xuất để thử nghiệm, người nghiên cứu quyết định cuối cùng. | Mục 6 báo cáo nhóm; có AI Canvas và phương án đối chứng không dùng AI. |
+| Quyết định | Đánh giá bốn rủi ro Value, Usability, Feasibility, Viability và đề xuất Not Yet cùng bước kiểm chứng, pilot và ngưỡng dừng. | Mục 8 báo cáo nhóm; chưa triển khai khi baseline và giá trị tăng thêm của AI chưa được đo. |
+| Hạn chế và hướng tiếp theo | Bổ sung các giới hạn của baseline, kiểm chứng người dùng, phương án không AI, chất lượng PDF và phạm vi sàng lọc; nêu kế hoạch đo và thử nghiệm tiếp. | Mục 9 báo cáo nhóm; các điểm chưa có bằng chứng được ghi rõ. |
+| Tài liệu tham khảo | Bổ sung sáu tài liệu và nêu mục đích sử dụng, gồm Anthropic, Google PAIR, RAG, Zotero và PRISMA. | Mục 10 báo cáo nhóm; PRISMA chỉ dùng khi thực hiện systematic review, RAG không được xem là bằng chứng về độ chính xác của công cụ nhóm. |
 
 ---
 
@@ -149,12 +151,12 @@ Kiểm tra task → Nhận cập nhật chung chung → Phát hiện blocker mu�
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
+| CP1 Scan | Nhờ AI gợi ý vấn đề theo bốn lăng kính. | Có thêm năm ý phù hợp để đưa vào bảng scan. | Một số ý đã được giải quyết hoặc chưa xảy ra với tôi. | Giữ ý 1, 4, 10, 12, 14; bỏ các ý còn lại theo trải nghiệm hiện tại. |
+| CP2 Problem Card | Nhờ AI đóng vai product manager hoài nghi để phản biện ba card. | Chỉ ra actor còn rộng, quy trình và bottleneck chưa được xác minh, metric thiếu định nghĩa. | Phản biện chưa cung cấp bằng chứng thực địa hay thời gian đo thật. | Ghi nhận điều chưa chắc, phương án không AI và các phép đo cần kiểm tra trong mục phản biện. |
 | CP4 Research | | | | |
 | CP5 Quy trình | | | | |
 | CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP6 Mức can thiệp / quyết định | Dùng AI hỗ trợ đưa nội dung CP6 đã soạn vào cấu trúc báo cáo nhóm và bổ sung nguồn tham khảo. | Giúp trình bày ma trận bốn mức, AI Canvas, Problem Statement v1, rủi ro và kết luận nhất quán. | AI không thể xác nhận baseline 60–120 phút/bài hoặc hiệu quả của Workflow khi chưa có pilot. | Giữ baseline là ước tính, chọn Not Yet và yêu cầu so sánh với checklist không dùng AI trước khi triển khai. |
 
 ---
 
@@ -162,17 +164,31 @@ Kiểm tra task → Nhận cập nhật chung chung → Phát hiện blocker mu�
 
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
+> Bản nháp giả định theo ngôi thứ nhất; cần đối chiếu và viết lại bằng trải nghiệm thật trước khi nộp.
+
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+
+Tôi nhận ra cùng một chủ đề nghiên cứu có thể chứa nhiều pain khác nhau. Khi nghe các bạn trình bày, tôi chú ý hơn đến actor, bước nghẽn và bằng chứng, thay vì chỉ chọn vấn đề nghe hấp dẫn hoặc dễ xây sản phẩm.
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
 
+Có lúc tôi nghĩ ngay đến AI đọc và tóm tắt PDF. Khi so sánh với checklist và literature matrix, tôi thấy nhóm chưa chứng minh được AI cần thiết. Vì vậy, chúng tôi giữ phương án không AI để đối chứng và quyết định Not Yet.
+
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+
+Có. Ban đầu tôi xem mốc 60–120 phút mỗi bài như baseline đáng tin. Sau phản biện, tôi nhận ra đó chỉ là ước tính và chưa rõ đo đến lúc trích xuất hay đến quyết định sàng lọc. Tôi sửa metric theo mốc thứ hai và đề xuất bấm giờ.
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
 
+Phần research khiến tôi chú ý rằng Zotero đã hỗ trợ chú thích PDF và liên kết ghi chú về nguồn gốc. Điều đó làm phương án không AI mạnh hơn tôi tưởng. Nhóm chưa có kết quả phỏng vấn hay số đo thực tế, nên tôi chưa thể kết luận người dùng cần Workflow.
+
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Khó nhất là thu hẹp từ “đọc và tổng hợp nhiều bài” thành đúng bước sàng lọc từng bài. Nếu không xác định điểm bắt đầu và kết thúc, mục tiêu dưới 30 phút sẽ không so sánh được với baseline; tôi cũng phải ghi rõ AI không được tự loại bài.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+
+Tôi sẽ bấm giờ vài bài và hỏi người từng sàng lọc tài liệu trước khi chọn mức can thiệp. Tôi cũng sẽ hỏi nhóm liệu checklist, Zotero và literature matrix đã đủ tốt chưa, đồng thời yêu cầu kiểm tra kỹ các trường hợp AI bỏ sót bài liên quan.
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
 
@@ -180,4 +196,4 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 ## 7. Tài liệu tham khảo
 
--
+- Sáu nguồn tham khảo cho phần CP6 và hướng tiếp theo được liệt kê, kèm phạm vi sử dụng, tại [mục 10 của báo cáo nhóm](../team/group_report.md#10-tài-liệu-tham-khảo).
