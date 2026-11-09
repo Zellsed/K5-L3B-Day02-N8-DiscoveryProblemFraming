@@ -315,4 +315,9 @@ Vì sao:
 
 ## 10. Tài liệu tham khảo
 
--
+- Semantic Scholar TLDR: https://www.semanticscholar.org/product/tldr
+- The Batch, "Very Short, Did Read" (mô tả TLDR chỉ xét abstract, mở đầu, kết luận): https://www.deeplearning.ai/the-batch/very-short-did-read
+- Thư viện BCU, AI và data extraction (Elicit): https://libguides.bcu.ac.uk/generativeAI/data-extraction
+- CASRAI, Elicit (AI Research Assistant): https://www.casrai.org/dictionary/term/elicit-ai-research-assistant
+- CASRAI, NotebookLM for research workflows: https://www.casrai.org/guides/notebooklm-for-research-workflows
+- Báo cáo cá nhân của Vũ Đình Huy, Quách Ngọc Huy, Khương Hoàng Nguyên, Trần Trọng Đạt (`report/individual/`)
