@@ -5,8 +5,8 @@
 - Họ tên: Quách Ngọc Huy
 - MSSV: 2A202603956
 - Email trường (không bắt buộc, repo có thể để public): 26ai.huyqn@vinuni.edu.vn
-- Tên nhóm:N8
-- Link repo nhóm:https://github.com/Zellsed/K5-L3B-Day02-N8-DiscoveryProblemFraming/tree/main
+- Tên nhóm: N8
+- Link repo nhóm: https://github.com/Zellsed/K5-L3B-Day02-N8-DiscoveryProblemFraming/tree/main
 
 ---
 
