@@ -109,49 +109,65 @@ Vì sao "Pain có bằng chứng" chỉ 3 ở cả ba candidate: toàn bộ số
 
 |   # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 | --: | -------- | -------------------------------------------------- | ---------------: | ---------------------: | ----------------- |
-|   1 |          |                                                    |                  |                        |                   |
-|   2 |          |                                                    |                  |                        |                   |
-|   3 |          |                                                    |                  |                        |                   |
-|   4 |          |                                                    |                  |                        |                   |
-|   5 |          |                                                    |                  |                        |                   |
-|   6 |          |                                                    |                  |                        |                   |
+|   1 | Sinh viên/nghiên cứu sinh thật sự mất 60–120 phút mỗi bài chỉ để quyết định có đọc kỹ không | Value | 5 | 2 | ✅ |
+|   2 | Bước tốn thời gian nhất là đọc toàn bộ bài, không phải bước tìm bài hay bước đối chiếu giữa các bài | Value | 5 | 2 | ✅ |
+|   3 | Mỗi kỳ mỗi người phải đọc ít nhất 5–10 bài dài (đủ lớn để pain đáng giải) | Value | 4 | 2 | ✅ |
+|   4 | Bản tóm tắt tự động (AI) không bỏ sót hoặc bịa kết luận chính so với abstract và kết luận gốc | Usability | 5 | 1 | ✅ |
+|   5 | Bài báo ở dạng PDF có cấu trúc (text-selectable), không phải scan/ảnh | Feasibility | 4 | 3 | — |
+|   6 | Đã có công cụ miễn phí hoặc rẻ giải được phần lớn bài toán này (Elicit, SciSpace, Semantic Scholar TLDR) | Viability | 4 | 2 | ✅ |
 
-_Điền 4–6 giả định; xóa dòng thừa._
-
-Giả định nhóm kiểm chứng trong buổi này:
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+Nhóm phỏng vấn 3 bạn học nhóm khác (theo The Mom Test), làm poll nhanh 6 người trong lớp, và 2 thành viên trong nhóm (Huy Vũ, Đạt) tự bấm giờ đọc thử 3 bài báo.
 
-Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
+Interview snapshot — người thứ 1:
 
-| Trường                                            | Nội dung |
-| ------------------------------------------------- | -------- |
-| Người được hỏi (vai trò, không ghi tên thật)      |          |
-| Câu nói đáng nhớ nhất (nguyên văn)                |          |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? |          |
-| Hiện đang xử lý bằng cách nào (workaround)?       |          |
-| Mất bao lâu, bao lần?                             |          |
-| Insight / opportunity rút ra                      |          |
+| Trường | Nội dung | 
+| ----- | ----- | 
+| Người được hỏi | Sinh viên năm 4 ngành CNTT, đang làm khóa luận tốt nghiệp | 
+| Câu nói đáng nhớ | "Abstract thì 5 phút là xong, cái ngồi lâu là mò vào phần Experiments với dataset xem họ có giả định điều kiện lý tưởng khác hẳn bài toán của mình không." | 
+| Lần gần nhất | Tuần trước, lọc 15 bài từ ArXiv tìm baseline, mất gần 3 tiếng cho 4 bài tưởng hợp mà hóa ra không dùng được | 
+| Workaround hiện tại | Đọc Abstract → xem bảng/hình → đưa PDF vào ChatGPT hỏi dataset, rồi vẫn phải mở PDF `Ctrl + F` dò lại vì sợ AI bịa | 
+| Mất bao lâu, bao lần | Khoảng 35–45 phút/bài ở bước dò Method/Experiment; mỗi đợt đồ án lọc 20–30 bài | 
+| Insight | Pain không nằm ở đọc toàn bộ bài, mà ở bước tìm điều kiện thực nghiệm, dataset và hạn chế bị giấu khỏi Abstract | 
+
+Interview snapshot — người thứ 2:
+
+| Trường | Nội dung | 
+| ----- | ----- | 
+| Người được hỏi | Sinh viên năm 3 ngành Khoa học dữ liệu, đang viết báo cáo tổng quan tài liệu (Literature Review) | 
+| Câu nói đáng nhớ | "Đọc lẻ từng bài thì nhanh, mệt nhất là đọc tới bài thứ 5 thì quên mất bài thứ 1 nó dùng metric gì và khác bài này ở chỗ nào." | 
+| Lần gần nhất | 3 ngày trước, đọc 5 bài dài 15 trang về RAG để chọn 3 bài đưa vào báo cáo nhóm, mất hơn 4 tiếng mở 5 tab PDF lật qua lại | 
+| Workaround hiện tại | Dùng SciSpace giải thích đoạn khó, tự kẻ bảng Notion (Phương pháp, Dataset, Hạn chế) rồi copy-paste tay từng bài vào | 
+| Mất bao lâu, bao lần | Đọc lướt mất 15 phút, nhưng dò thông tin điền bảng và đối chiếu mất thêm 30–40 phút/bài; 2–3 môn/kỳ | 
+| Insight | Để quyết định bài nào đáng giữ lại khi làm tổng quan, người đọc cần trích xuất thông tin theo cùng một khung chuẩn kèm trích dẫn trang để đối chiếu ngang | 
 
 Tổng hợp:
 
-| Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
-| ----- | ----------------: | ----------------- | ----------------- |
-|       |                   |                   |                   |
+| Nguồn | Số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác | 
+| ----- | ----- | ----- | ----- | 
+| Phỏng vấn | 3 | 2/3 phải đọc 15–30 bài/kỳ và mất 30–45 phút/bài ở bước kiểm tra Method/Dataset và đối chiếu | 1 người nói chỉ đọc bài tập môn đại cương nên đọc Abstract + Conclusion (10 phút) là đủ quyết định | 
+| Poll trong lớp | 6 | 4/6 từng mất trên 30 phút cho một bài báo rồi mới phát hiện không áp dụng được | 2/6 nói dùng Semantic Scholar TLDR cộng đọc lướt hình vẽ là đủ lọc | 
+| Bấm giờ & thử AI (Huy Vũ, Đạt) | 3 bài | Thử tóm tắt tổng quát bằng ChatGPT: 2/3 bài AI chỉ lặp lại lời khen ở Abstract, bỏ sót hạn chế của tập dữ liệu nằm ở mục 4 | Bấm giờ screening thật mất 25, 35 và 40 phút/bài (trung bình ~33 phút); con số 60–120 phút ban đầu bị gộp cả thời gian đọc hiểu sâu sau khi đã chọn bài | 
 
-**Nhóm đã sửa problem thế nào sau kiểm chứng:**
+**Nhóm đã sửa problem:** thu hẹp từ "tóm tắt toàn bộ bài báo dài 60–120 phút" thành "**trích xuất có dẫn nguồn các trường kỹ thuật (phương pháp, dataset, điều kiện thực nghiệm, hạn chế) để sàng lọc và đối chiếu trong 30–45 phút**". Thêm phương án không dùng AI (checklist đọc 3 bước Abstract → Figures/Tables → Setup + bảng so sánh mẫu) cho trường hợp chỉ cần lọc sơ bộ. Giả định #4 (trích xuất theo khung chuẩn có dẫn nguồn sẽ không bỏ sót hạn chế như tóm tắt tự do) mới thử trên 3 bài, vẫn cần kiểm chứng thêm.
 
 ### 3.3. Research giải pháp đã có
 
-| Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
-| ------------------------ | ---- | ------------------------------ | --------- | --------------------- | ---------------- |
-|                          |      |                                |           |                       |                  |
-|                          |      |                                |           |                       |                  |
-|                          |      |                                |           |                       |                  |
+| Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm | 
+| ----- | ----- | ----- | ----- | ----- | ----- | 
+| Semantic Scholar TLDR | https://www.semanticscholar.org/product/tldr | Bước 2→4: tóm 1 câu từ abstract, mở đầu, kết luận để lọc nhanh bài có đáng đọc | Miễn phí, không cần tài khoản, tích hợp sẵn trong kết quả tìm kiếm, lọc nhanh hàng chục bài cùng lúc | Chỉ 1 câu — quá ngắn để đánh giá phương pháp/hạn chế; không có cho mọi bài (nhất là bài mới hoặc ít index); chỉ dùng abstract/intro/kết luận; không upload PDF riêng được | Giải bước lọc ban đầu nhưng chưa đủ cho screening kỹ; cần mức tóm tắt giữa "1 câu" và "đọc cả bài" — **dùng làm bộ lọc đầu tiên** | 
+| Elicit (AI Research Assistant) | https://elicit.com | Bước 1–3 và một phần bước 4: tìm bài (semantic search 138M+ bài), trích xuất dữ liệu có cấu trúc (câu hỏi nghiên cứu, phương pháp, kết quả, hạn chế) vào bảng so sánh | Semantic search hiểu câu hỏi nghiên cứu; trích xuất có trích dẫn cấp câu (mỗi claim truy về đoạn gốc); bảng so sánh nhiều bài cùng lúc; có thể upload PDF | Free plan giới hạn extraction/PDF processing, dùng nhiều phải trả phí Pro; AI vẫn có thể hiểu sai ngữ cảnh — người dùng cần kiểm | Cách tiếp cận "bảng so sánh" gần nhất với nhu cầu nhóm; nếu Elicit đã giải 80% thì quyết định đúng có thể là "dùng Elicit" thay vì tự xây — **tương tự bài mẫu kết luận "dùng Rovo"**; giới hạn free plan là rào cản cho sinh viên | 
+| SciSpace (trước đây là Typeset.io) | https://scispace.com | Bước 2–3: "Chat với PDF" — hỏi-đáp thay vì đọc toàn bài; giải thích text, công thức, bảng; tóm tắt từng phần (abstract, methodology, results, limitations) | Chat tương tác: hỏi "phương pháp là gì?" thay vì đọc 20 trang; hỗ trợ 75+ ngôn ngữ; highlight và giải thích; Chrome extension; kho 270M+ bài | Free plan chỉ 100 AI credit/tháng (hết nhanh khi dùng nhiều); model nâng cao phải trả \~\$20/tháng; PDF scan/ảnh có thể lỗi | "Hỏi thay vì đọc" giải đúng bottleneck — 5 câu hỏi thay 20 trang; credit limit là rào cản thực tế cho sinh viên; nhóm nên **thử 2–3 bài thật** để đánh giá | 
+| NotebookLM (Google) | https://notebooklm.google.com | Bước 2–3–4: upload PDF, hỏi đáp (đơn bài và đa bài), tạo study guide, flashcard, audio overview; dẫn nguồn inline về đoạn cụ thể | Miễn phí (Google account); source-grounded — AI chỉ dùng tài liệu upload, giảm bịa (khớp boundary nhóm); so sánh nhiều bài cùng lúc; tạo audio summary | Bỏ sót thông tin khi nhiều bài (context window); yếu so sánh phương pháp phức tạp 20+ bài; không đánh giá chất lượng nghiên cứu; tối đa 50 source/notebook, 500K từ/file; PDF scan kém có thể lỗi | Phù hợp nhất cho **"so sánh batch bài báo"** — load 10–15 bài, hỏi cùng câu; nhưng "hiểu bài" ≠ "đánh giá chất lượng bài" — vẫn cần người kiểm; cách grounding khớp yêu cầu boundary nhóm | 
 
----
+**Kết luận research:**
+
+```text
+Phần lớn quy trình đã có công cụ miễn phí làm được (Semantic Scholar TLDR, NotebookLM, Elicit bản free). Không có lý do tự xây công cụ hay agent đọc PDF từ đầu.
+Hướng hợp lý: Rule/Checklist lọc sơ bộ qua Abstract → AI trích xuất bảng tiêu chí có dẫn nguồn (dùng NotebookLM hoặc prompt chuẩn) → Sinh viên kiểm chứng đoạn trích → Quyết định chọn/bỏ.
+```
 
 
 ## 4. Quy trình trước/sau (CP5)
