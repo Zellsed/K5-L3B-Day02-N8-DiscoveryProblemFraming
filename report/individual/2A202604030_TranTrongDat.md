@@ -6,11 +6,11 @@
 
 ## 1. Thông tin học viên
 
-- Họ tên:
-- MSSV:
-- Email trường (không bắt buộc, repo có thể để public):
-- Tên nhóm:
-- Link repo nhóm:
+- Họ tên: Trần Trọng Đạt
+- MSSV: 2A202604030
+- Email trường (không bắt buộc, repo có thể để public): 
+- Tên nhóm: N8
+- Link repo nhóm: https://github.com/Zellsed/K5-L3B-Day02-N8-DiscoveryProblemFraming
 
 ---
 
@@ -20,11 +20,11 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
-| 5 | | | | |
+| 1 |Lặp lại |Noon Report được tàu gửi về cho nhân viên khai thác vào mỗi 12h trưa để theo dõi tình trạng tàu, tình trạng tàu bao gồm nhiên liệu, vị trí, vận tốc của tàu để bộ phận khai thác dự đoán thời gian cập bến và đánh giá xem có sai lệch trong lượng nhiên liệu tiêu thụ hay không |Chủ tàu, nhân viên khai thác, kỹ sư trên tàu, thuyền trưởng |12h trưa thuyền trưởng phải gửi Noon Report về |
+| 2 |Cần đọc, tổng hợp nhiều thông tin |Khi tàu tháo dỡ hàng ở cảng, thuyền trưởng cần gửi thông tin tháo dỡ, tình trạng thời tiết, máy móc để tính xem ai phải chịu trách nhiệm cho khoảng thời gian trì trệ nếu gặp sự cố tùy theo hợp đồng giữa bên cho thuê và bên thuê tàu |Chủ tàu, bộ phận khai thác, thuyền trưởng, người nhận |Cần tổng hợp thông tin từ phía hợp đồng bao gồm thông tin về thời gian ước lượng hoàn tất, chi phí phạt, thưởng, ai là người chịu trách nhiệm cho trì trệ trong tháo dỡ, báo cáo tình trạng dỡ hàng chất hàng từ thuyền trưởng |
+| 3 |Cần đọc, tổng hợp nhiều thông tin|Nghiên cứu sinh trong literature reviews cần đọc và tìm kiếm rất nhiều tài liệu để tìm ra research gap, cần đọc ít thì  khoảng 30 báo cáo dài ngắn từ 10-30 trang |Nghiên cứu sinh |Mỗi bài đọc và trích xuất phân tích nội dùng cần khoảng 1-2 tiếng phụ thuộc vào độ phức tạp của bài báo  |
+| 4 |Lặp lại |Khi hoàn thành nâng câos một model nhưng các metrics của task là cố định không đổi, từ đó luôn phải copy báo cáo cũ nhưng lại cần sửa lại giá trị parameter và mô tả phương pháp cũng như cần cắt chụp lại ảnh kết quả từ terminal |Nghiên cứu sinh |Mỗi lần làm báo cáo làm lại cần mất 30 phút để copy và sử lại phương pháp và kết quả |
+| 5 |Pain ừ người khác |Sinh viên làm bài nhóm không thống nhất format, quy tắc và giọng văn giống nhau, đến cuối khi tổng hợp lại bài hoàn chỉnh cần sửa lại giọng văn và format toàn bộ báo cáo |Sinh viên trong nhóm |Sửa lại báo cáo tổng hợp tầm 40 trang mất khoảng 1 tiếng |
 | 6 | | | | |
 | 7 | | | | |
 | 8 | | | | |
