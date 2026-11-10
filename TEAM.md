@@ -52,9 +52,9 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 **Phần việc phụ trách:** CP5 (người chính, nhóm) + CP0, CP1, CP2, CP7 (cá nhân)
 
-- **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
-- **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
-- **Điều mình học được từ phần nhóm:**
+- **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì): Làm bước sơ đồ trước sau, xác định vị trí Rule, Human, AI, viết problem statement v0, xem xét tiêu chí đánh giá, boundary.
+- **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào): `report/team/group_report.md` mục 4, 5; `report/assets/cp5-workflow-future.png`
+- **Điều mình học được từ phần nhóm:**: Mỗi người có vấn đề khác nhau và có ước lượng khác nhau, do đó cần nghiên cứu rộng để tìm ra một bài toán chung có nhu cầu cao.
 
 ### KhuongHoangNguyen-2A202603987
 
