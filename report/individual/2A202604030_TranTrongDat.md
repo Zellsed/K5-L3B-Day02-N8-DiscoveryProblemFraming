@@ -125,16 +125,8 @@ Card #1 — Đọc báo cáo xếp/dỡ để tính laytime và DEM/DES.
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
 | Quy trình nhóm | Xây dựng quy trình trước/sau (CP5). | Xác định bottleneck và vị trí AI can thiệp. |
 | Problem Statement | Xây dựng Problem Statement v0. | Làm rõ vấn đề, metric và boundary. |
-| Mức can thiệp AI | | |
-| Quyết định | | |
 
 ---
 
@@ -142,11 +134,11 @@ Card #1 — Đọc báo cáo xếp/dỡ để tính laytime và DEM/DES.
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | Diễn đạt lại vấn đề, gợi ý thêm 3 ý. | Chuẩn hóa Job Story. | Thiếu bằng chứng thực tế. | Giữ các ý phù hợp, cần kiểm chứng. |
+| CP1 Scan | Diễn đạt lại vấn đề, gợi ý thêm 3 ý. | Viết đúng lại các thuật ngữ chuyên môn |  | Giữ các ý phù hợp, cần kiểm chứng. |
 | CP2 Problem Card | Hỗ trợ viết và phản biện 3 card. | Làm rõ bottleneck và metric. | Một số nhận định chưa kiểm chứng. | Điều chỉnh theo trải nghiệm cá nhân. |
 | CP4 Research | | | | |
-| CP5 Quy trình | Rà soát quy trình trước/sau. | Xác định vai trò AI và con người. | Có thể tự động hóa quá mức. | Giữ bước kiểm tra thủ công. |
-| CP5–6 Problem Statement | Rà soát Problem Statement v0. | Làm rõ actor, metric và boundary. | Baseline chưa được xác minh. | Ghi rõ số liệu ước lượng. |
+| CP5 Quy trình | Rà soát quy trình trước/sau. | Xác định vai trò AI và con người. | AI tự động hóa toàn bộ quy trình | Giữ bước chọn lọc và kiểm tra thủ công. |
+| CP5–6 Problem Statement | Đề xuất quy trình trước/sau và Problem Statement. | Gợi ý metrics và boundary. |  | Định hướng metrics theo Grounding, Correctness và Relevance. |
 | CP6 Mức can thiệp / quyết định | | | | |
 
 ---
@@ -156,27 +148,26 @@ Card #1 — Đọc báo cáo xếp/dỡ để tính laytime và DEM/DES.
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
-
-
-**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
-
-
+Có nhiều vấn đề liên quan đến tổng hợp thông  
+tin và tăng liên kết hoặc giảm thời gian   thay đổi giữa các tasks.
+**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**  
+Ban đầu có một số ý xuất phát từ việc ứng dụng RAG để tổng hợp thông tin thay vì bắt đầu từ vấn đề. Lúc đó nhóm vấn giữ nguyên vấn đề nhưng thay đổi hướng thành tập trung vào vấn đề của người dùng rồi mới xem xét liệu các ứng dụng đó có là 
+một phương pháp khả thi hay không.  
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+Tôi có đổi ý và giảm bớt quan tâm đối với các chủ đề liên quan đến chuỗi chung ứng đề phù hợp hơn với background của cả team.  
+
+**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**  
+Khi vào nghiên cứu khác với suy nghĩ ban đầu là tìm nội dung phù hợp thì thứ người nghiên cứu thực sự quan tâm là các thí nghiệm và kết luận trong bài. Sử dụng nội dung phù hợp ở mô tả có thể mang ý nghĩa tổng quan hơi rộng.  
+
+**6.5. Điều khó nhất khi viết Problem Statement là gì?**  
+Phần problems người dùng đã được bàn trong pitch nhưng đến phần metrics đánh giá cần cân nhắc thêm về phương pháp để phù hợp với bài toán. Ở đây ước chừng dưới 30 phút trên bài không phải 1 bài 30 phút mà tính trung bình trên tổng số bài được input kể cả bài được đánh giá không đáng đọc. Tuy nhiên việc đọc thêm các bài này còn phụ thuộc và nhu cầu người dùng.  
 
 
-**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+**6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**  
+Nếu làm lại, tôi sẽ đề xuất kiểm chứng thời gian sàng lọc thực tế sớm hơn, thay vì chỉ dựa trên ước lượng 60–120 phút/bài. Tôi cũng sẽ phản biện kỹ hơn về khả năng AI đánh giá sai mức độ liên quan, đặc biệt khi bỏ sót những bài báo quan trọng, và yêu cầu so sánh với phương án không dùng AI.
 
-
-**6.5. Điều khó nhất khi viết Problem Statement là gì?**
-
-
-**6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
-
-
-**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
-
+**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.  
+Nhóm lựa chọn vấn đề người nghiên cứu mất nhiều thời gian đọc các bài báo chỉ để xác định bài nào nên dành thêm thời gian để đọc cũ. Quy trình hiện tại chủ yếu dựa vào việc đọc và ghi chú thủ công, trong khi quy trình đề xuất sử dụng RAG và AI để trích xuất, tóm tắt và phân loại tài liệu theo mức độ liên quan. Hiệu quả được đánh giá thông qua thời gian sàng lọc, Grounding, Correctness và Relevance, nhằm bảo đảm vừa tiết kiệm thời gian vừa hạn chế sai sót điều quan trọng trong liêm chính học thuật. Boundary của hệ thống là không được tạo thông tin hoặc trích dẫn thiếu căn cứ và không thay người nghiên cứu đưa ra kết luận học thuật. Mức can thiệp AI tập trung vào tự động hóa việc xử lý thông tin và đề xuất mức độ ưu tiên đọc, còn con người chịu trách nhiệm kiểm chứng và đánh giá chuyên sâu đối với các bài được AI sàng lọc sẵn. Cuối cùng, người nghiên cứu ưu tiên đọc những bài có độ liên quan cao, cân nhắc các bài liên quan trung bình và tạm bỏ qua những bài ít liên quan.
 ---
 
 ## 7. Tài liệu tham khảo
-
--
