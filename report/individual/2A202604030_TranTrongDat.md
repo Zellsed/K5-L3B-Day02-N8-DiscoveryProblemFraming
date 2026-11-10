@@ -125,8 +125,16 @@ Card #1 — Đọc báo cáo xếp/dỡ để tính laytime và DEM/DES.
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
+| Pitch Problem Card         |                        |                                  |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt:    |                                  |
+| Nhận phản biện             | Câu hỏi tôi nhận được: | Tôi đã sửa gì:                   |
+| Gom cluster / cây OST      |                        |                                  |
+| Chọn candidate problem     |                        |                                  |
+| Kiểm chứng / research      |                        |                                  |
 | Quy trình nhóm | Xây dựng quy trình trước/sau (CP5). | Xác định bottleneck và vị trí AI can thiệp. |
 | Problem Statement | Xây dựng Problem Statement v0. | Làm rõ vấn đề, metric và boundary. |
+| Mức can thiệp AI           |                        |                                  |
+| Quyết định                 |                        |                                  |
 
 ---
 
@@ -168,6 +176,7 @@ Nếu làm lại, tôi sẽ đề xuất kiểm chứng thời gian sàng lọc 
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.  
 Nhóm lựa chọn vấn đề người nghiên cứu mất nhiều thời gian đọc các bài báo chỉ để xác định bài nào nên dành thêm thời gian để đọc cũ. Quy trình hiện tại chủ yếu dựa vào việc đọc và ghi chú thủ công, trong khi quy trình đề xuất sử dụng RAG và AI để trích xuất, tóm tắt và phân loại tài liệu theo mức độ liên quan. Hiệu quả được đánh giá thông qua thời gian sàng lọc, Grounding, Correctness và Relevance, nhằm bảo đảm vừa tiết kiệm thời gian vừa hạn chế sai sót điều quan trọng trong liêm chính học thuật. Boundary của hệ thống là không được tạo thông tin hoặc trích dẫn thiếu căn cứ và không thay người nghiên cứu đưa ra kết luận học thuật. Mức can thiệp AI tập trung vào tự động hóa việc xử lý thông tin và đề xuất mức độ ưu tiên đọc, còn con người chịu trách nhiệm kiểm chứng và đánh giá chuyên sâu đối với các bài được AI sàng lọc sẵn. Cuối cùng, người nghiên cứu ưu tiên đọc những bài có độ liên quan cao, cân nhắc các bài liên quan trung bình và tạm bỏ qua những bài ít liên quan.
+
 ---
 
 ## 7. Tài liệu tham khảo
